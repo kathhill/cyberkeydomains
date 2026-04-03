@@ -1,11 +1,25 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import logo from "../assets/legacy-updated-reverse.png";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+	title="Cyberkey Domain Services"
+	description="Your domain, email, and trust resource."
+>
+	<main>
+		<section class="hero" id="intro">
+			<div class="viewport-header">
+				<Image class="logo" src={logo} alt="Cyberkey Domain Services logo" />
+			</div>
+		</section>
+	</main>
 </Layout>
+
+<style lang="scss">
+	.viewport-header {
+		display: flex;
+		justify-content: center;
+	}
+</style>
