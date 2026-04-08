@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@theme {
+    --font-sans: var(--font-montserrat), sans-serif;
+    --font-italic: var(--font-montserrat-italic);
+
+    --color-brand: #113260;
+    --color-brand-light: #224575;
+    --color-brand-lighter: #3a5b89;
+    --color-brand-darkest: #02142c;
+    --color-reverse: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    font-weight: 500;
+}
+
+main {
+    background: #113260;
+    color: var(--color-reverse);
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    color: var(--color-brand-darkest);
+}
